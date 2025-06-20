@@ -1,0 +1,27 @@
+from models.transaksi import TransaksiManager
+from models.produk import ProdukManager
+from datetime import datetime
+
+class TransaksiController:
+    def __init__(self,produk_manager:ProdukManager, transaksi_manager:TransaksiManager):
+        self.produk_manager = produk_manager
+        self.transaksi_manager = transaksi_manager
+    
+    def proses_transaksi(self, nama_produk,jumlah,tanggal=None):
+        if tanggal is None:
+            tanggal = datetime.now().strftime("%Y-%m-%d")
+        #kurangi stok
+        sukses,pesan = self.produk_manager.kurangi_stok(nama_produk,jumlah)
+        if not sukses:
+            return False, pesan
+        #ambil data
+        hasil = self.produk_manager.cari_produk(nama_produk)
+        if hasil.empty:
+            return False,"Produk Tidak Ditemukan!"
+        
+        harga = hasil.iloc[0]["harga_satuan"]
+        total = harga*jumlah
+
+        #simpan transaksi
+        self.transaksi_manager.tambah_transaksi(tanggal,nama_produk,jumlah,harga,total)
+        return True, f"{jumlah}x {nama_produk} berhasil dibeli. Total:  Rp{total:,}"

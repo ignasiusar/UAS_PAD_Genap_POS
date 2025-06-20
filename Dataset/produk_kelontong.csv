@@ -1,0 +1,53 @@
+id_produk,kategori,nama_produk,harga_satuan,stok
+P001,Makanan Pokok,Beras,4033,79
+P002,Makanan Pokok,Gula,17102,59
+P003,Makanan Pokok,Minyak Goreng,4061,67
+P004,Makanan Pokok,Tepung Terigu,12378,48
+P005,Makanan Pokok,Mie Instan,9393,94
+P006,Makanan Pokok,Garam,6691,6
+P007,Makanan Pokok,Telur,5968,66
+P008,Makanan Pokok,Santan Instan,10500,22
+P009,Makanan Ringan,Biskuit,6051,73
+P010,Makanan Ringan,Kerupuk,11480,91
+P011,Makanan Ringan,Permen,11423,34
+P012,Makanan Ringan,Cokelat,18831,75
+P013,Makanan Ringan,Wafer,13311,81
+P014,Makanan Ringan,Snack Kentang,17070,62
+P015,Makanan Ringan,Chiki,14024,33
+P016,Makanan Ringan,Kacang Kulit,9866,15
+P017,Makanan Ringan,Roti Tawar,9315,19
+P018,Minuman,Air Mineral,13576,34
+P019,Minuman,Teh Botol,16291,63
+P020,Minuman,Susu UHT,3085,78
+P021,Minuman,Kopi Sachet,8486,29
+P022,Minuman,Minuman Bersoda,12880,31
+P023,Minuman,Jus Kotak,1090,95
+P024,Minuman,Energen,12485,15
+P025,Minuman,Susu Kental Manis,14096,89
+P026,Kebutuhan Rumah Tangga,Sabun Cuci Piring,18905,22
+P027,Kebutuhan Rumah Tangga,Sabun Cuci Baju,10768,67
+P028,Kebutuhan Rumah Tangga,Pewangi Pakaian,2190,17
+P029,Kebutuhan Rumah Tangga,Sapu,8118,32
+P030,Kebutuhan Rumah Tangga,Ember,3208,24
+P031,Kebutuhan Rumah Tangga,Lap Pel,6156,96
+P032,Kebutuhan Rumah Tangga,Kain Lap,9737,55
+P033,Kebutuhan Rumah Tangga,Sikat WC,11564,17
+P034,Kebutuhan Rumah Tangga,Plastik Sampah,12207,58
+P035,Perawatan Tubuh,Sabun Mandi,16230,44
+P036,Perawatan Tubuh,Shampo,8723,84
+P037,Perawatan Tubuh,Pasta Gigi,18699,74
+P038,Perawatan Tubuh,Sikat Gigi,15211,26
+P039,Perawatan Tubuh,Tisu Basah,14386,7
+P040,Perawatan Tubuh,Tisu Kering,4386,78
+P041,Perawatan Tubuh,Minyak Kayu Putih,18949,48
+P042,Perawatan Tubuh,Hand Sanitizer,7948,69
+P043,Lainnya,Lilin,7621,78
+P044,Lainnya,Korek Api,2934,42
+P045,Lainnya,Baterai AA,6991,87
+P046,Lainnya,Baterai AAA,3589,74
+P047,Lainnya,Pulpen,17820,41
+P048,Lainnya,Buku Catatan,5715,16
+P049,Lainnya,Masker Kain,8795,69
+P050,Lainnya,Karet Gelang,11486,86
+P051,Lainnya,Benang,6734,94
+P052,Lainnya,Jarum Pentul,9708,32
