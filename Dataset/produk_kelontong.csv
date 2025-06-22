@@ -1,20 +1,20 @@
 id_produk,kategori,nama_produk,harga_satuan,stok
-P001,Makanan Pokok,Beras,4033,79
-P002,Makanan Pokok,Gula,17102,59
+P001,Makanan Pokok,Beras,4033,2
+P002,Makanan Pokok,Gula,17102,44
 P003,Makanan Pokok,Minyak Goreng,4061,67
-P004,Makanan Pokok,Tepung Terigu,12378,48
-P005,Makanan Pokok,Mie Instan,9393,94
+P004,Makanan Pokok,Tepung Terigu,12378,47
+P005,Makanan Pokok,Mie Instan,9393,84
 P006,Makanan Pokok,Garam,6691,6
 P007,Makanan Pokok,Telur,5968,66
 P008,Makanan Pokok,Santan Instan,10500,22
-P009,Makanan Ringan,Biskuit,6051,73
-P010,Makanan Ringan,Kerupuk,11480,91
+P009,Makanan Ringan,Biskuit,6051,72
+P010,Makanan Ringan,Kerupuk,11480,86
 P011,Makanan Ringan,Permen,11423,34
 P012,Makanan Ringan,Cokelat,18831,75
 P013,Makanan Ringan,Wafer,13311,81
 P014,Makanan Ringan,Snack Kentang,17070,62
 P015,Makanan Ringan,Chiki,14024,33
-P016,Makanan Ringan,Kacang Kulit,9866,15
+P016,Makanan Ringan,Kacang Kulit,9866,12
 P017,Makanan Ringan,Roti Tawar,9315,19
 P018,Minuman,Air Mineral,13576,34
 P019,Minuman,Teh Botol,16291,63
@@ -51,3 +51,5 @@ P049,Lainnya,Masker Kain,8795,69
 P050,Lainnya,Karet Gelang,11486,86
 P051,Lainnya,Benang,6734,94
 P052,Lainnya,Jarum Pentul,9708,32
+P053,Lainnya,Gelas,5000,97
+P054,Makanan Ringan,Keripik Brownies,15000,5

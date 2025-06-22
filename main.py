@@ -5,14 +5,34 @@ import sys
 import os
 from views.produk_view import ProductPage
 from views.pos_view import POSView
+from views.visualisasi_view import VisualisasiPage
+# Menyimpan referensi ke window aktif agar tidak double
+windows_aktif = {
+    "pos": None,
+    "produk": None,
+    "visual": None
+}
 
 def jalankan_visualisasi():
+    if windows_aktif["pos"] is not None and windows_aktif["pos"].winfo_exists():
+        windows_aktif["pos"].lift()  # Bawa ke depan
+        return
     try:
-        subprocess.Popen([sys.executable, "visualisasi_main.py"])
+        new_window = tk.Toplevel(root)
+        new_window.title("Visualisasi Penjualan")
+        new_window.geometry("1080x720")  # Ukuran bisa diubah
+
+        from views.visualisasi_view import VisualisasiPage  # ✅ PERBAIKI DI SINI
+        halaman_visual = VisualisasiPage(new_window)
+        halaman_visual.pack(fill="both", expand=True)
     except Exception as e:
-        messagebox.showerror("Error", f"Gagal menjalankan visualisasi:\n{e}")
+        messagebox.showerror("Error", f"Gagal membuka visualisasi:\n{e}")
+
 
 def jalankan_daftar():
+    if windows_aktif["produk"] is not None and windows_aktif["produk"].winfo_exists():
+        windows_aktif["produk"].lift()
+        return
     try:
         new_window = tk.Toplevel(root)
         new_window.title("Daftar Produk")
@@ -24,6 +44,9 @@ def jalankan_daftar():
         messagebox.showerror("Error", f"Gagal membuka POS:\n{e}")
 
 def jalankan_pos():
+    if windows_aktif["visual"] is not None and windows_aktif["visual"].winfo_exists():
+        windows_aktif["visual"].lift()
+        return
     new_window = tk.Toplevel(root)
     new_window.title("Point of Sale")
     new_window.geometry("900x600")

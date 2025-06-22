@@ -11,23 +11,26 @@ class TransaksiManager:
         if os.path.exists(self.path_file):
             return pd.read_csv(self.path_file)
         else:
-            return pd.DataFrame(columns=["tanggal","produk","jumlah","harga_satuan","total"])
+            return pd.DataFrame(columns=["tanggal","id_produk","produk","jumlah","harga_satuan","total"])
     
     def simpan_data(self):
         self.df.to_csv(self.path_file, index=False)
     
-    def tambah_transaksi(self,nama_produk,jumlah,harga,tanggal=None):
+    def tambah_transaksi(self, id_produk, nama_produk, jumlah, harga, tanggal=None):
         if tanggal is None:
             tanggal = datetime.now().strftime("%Y-%m-%d")
 
-        total = harga*jumlah
+        total = harga * jumlah
         new_row = {
-            "tanggal":tanggal
-            ,"produk":nama_produk
-            ,"jumlah":jumlah
-            ,"harga_satuan":harga
-            ,"total":total
+            "id_produk": id_produk,
+            "tanggal": tanggal,
+            "produk": nama_produk,
+            "jumlah": jumlah,
+            "harga_satuan": harga,
+            "total": total
         }
+
+                
         self.df.loc[len(self.df)]= new_row
         self.simpan_data()
         return True, f"Transaksi Berhasil. Total Belanja : Rp{total:,}"
